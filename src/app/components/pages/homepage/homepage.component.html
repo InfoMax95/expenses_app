@@ -1,1 +1,15 @@
-<p>pagina2 works!</p>
+<mat-toolbar>
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span [routerLink]="isLogged? 'dashboard' : 'homepage'">EXPENSES App</span>
+  <span>EXPENSES App</span>
+  <span>EXPENSES App</span>
+  <span class="example-spacer"></span>
+  <button *ngIf="isLogged" mat-icon-button (click)="Logout()" routerLink="homepage">
+    <mat-icon>logout</mat-icon>
+  </button>
+  <button *ngIf="!isLogged" mat-icon-button routerLink="login">
+    <mat-icon>login</mat-icon>
+  </button>
+</mat-toolbar>

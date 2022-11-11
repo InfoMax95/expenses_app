@@ -9,8 +9,9 @@ import { RegisterComponent } from './components/register/register.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
+  {path: '', component: HomepageComponent },
   {path: 'homepage', component: HomepageComponent },
-  {path: '', component: DashboardComponent, canActivate: [AuthGuard], children: [
+  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard], children: [
     {path: '', redirectTo: 'pagina1', pathMatch: 'full'},
     {path: 'pagina1', component: Pagina1Component},
   ]},
