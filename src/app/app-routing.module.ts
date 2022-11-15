@@ -7,14 +7,16 @@ import { Pagina1Component } from './components/pages/pagina1/pagina1.component';
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {path: '', component: HomepageComponent },
+  {path: '', pathMatch: 'full', redirectTo: 'homepage' },
   {path: 'homepage', component: HomepageComponent },
   {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard], children: [
     {path: '', redirectTo: 'pagina1', pathMatch: 'full'},
     {path: 'pagina1', component: Pagina1Component},
-  ]},
+  ]
+  },
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {

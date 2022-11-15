@@ -1,15 +1,4 @@
-<mat-toolbar>
-  <button mat-icon-button>
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span [routerLink]="isLogged? 'dashboard' : 'homepage'">EXPENSES App</span>
-  <span>EXPENSES App</span>
-  <span>EXPENSES App</span>
-  <span class="example-spacer"></span>
-  <button *ngIf="isLogged" mat-icon-button (click)="Logout()" routerLink="homepage">
-    <mat-icon>logout</mat-icon>
-  </button>
-  <button *ngIf="!isLogged" mat-icon-button routerLink="login">
-    <mat-icon>login</mat-icon>
-  </button>
-</mat-toolbar>
+<section class="explain-app">
+  <div class="container-sx">Questa applicazione ti permetterà di tenere conto di tutte le tue spese</div>
+  <div class="container-dx"></div>
+</section>

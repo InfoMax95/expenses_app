@@ -8,14 +8,14 @@ import { AuthService } from 'src/app/auth/auth.service';
 })
 export class HomepageComponent implements OnInit {
 
-  isLogged: boolean = true;
+  // isLogged: boolean = true;
 
   constructor(private authService: AuthService) {
 
   }
 
   ngOnInit(): void {
-    this.isLogged = this.authService.getIsLoggedIn();
+    // this.isLogged = this.authService.getIsLoggedIn();
   }
 
   Logout() {

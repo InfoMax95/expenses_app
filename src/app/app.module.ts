@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Pagina1Component } from './components/pages/pagina1/pagina1.component';
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     DashboardComponent,
     Pagina1Component,
     HomepageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
