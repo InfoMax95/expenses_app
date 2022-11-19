@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { LoginComponent } from './components/login/login.component';
-import { Pagina1Component } from './components/pages/pagina1/pagina1.component';
-import { HomepageComponent } from './components/pages/homepage/homepage.component';
-import { RegisterComponent } from './components/register/register.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AuthGuard } from './core/auth/auth.guard';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { LoginComponent } from './modules/login/login.component';
+import { Pagina1Component } from './modules/pagina1/pagina1.component';
+import { HomepageComponent } from './modules/homepage/homepage.component';
+import { RegisterComponent } from './modules/register/register.component';
+import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
