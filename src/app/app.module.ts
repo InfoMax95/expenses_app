@@ -15,14 +15,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { LoginComponent } from './modules/login/login.component';
+import { RegisterComponent } from './modules/register/register.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { Pagina1Component } from './components/pages/pagina1/pagina1.component';
-import { HomepageComponent } from './components/pages/homepage/homepage.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { Pagina1Component } from './modules/pagina1/pagina1.component';
+import { HomepageComponent } from './modules/homepage/homepage.component';
+import { NotFoundComponent } from './modules/not-found/not-found.component';
+import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
