@@ -23,6 +23,7 @@ import { Pagina1Component } from './modules/pagina1/pagina1.component';
 import { HomepageComponent } from './modules/homepage/homepage.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
+import { DirectivesDirective } from './core/directives.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ToolbarComponent } from './shared/components/toolbar/toolbar.component'
     Pagina1Component,
     HomepageComponent,
     NotFoundComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    DirectivesDirective
   ],
   imports: [
     BrowserModule,
