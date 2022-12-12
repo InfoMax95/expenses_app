@@ -1,3 +1,35 @@
-.example-spacer {
-  flex: 1 1 auto;
+.toolbar {
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  display: flex;
+  .toolbar-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    #logo {
+      height: 75px;
+      width: 75px;
+      margin: 0 0 0 2rem;
+      img {
+        object-fit: cover;
+        max-width: 100%;
+      }
+    }
+  }
+  .toolbar-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .toolbar-item {
+      text-transform: uppercase;
+      color: #000;
+      margin: 0 2rem 0 0;
+    }
+  }
 }
