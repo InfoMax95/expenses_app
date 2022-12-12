@@ -23,7 +23,7 @@ import { Pagina1Component } from './modules/pagina1/pagina1.component';
 import { HomepageComponent } from './modules/homepage/homepage.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
-import { DirectivesDirective } from './core/directives.directive';
+import { DirectivesDirective } from './core/directives/directives.directive';
 
 @NgModule({
   declarations: [
