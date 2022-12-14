@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -8,14 +8,22 @@ import { NgForm } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
+  homeform!: FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.homeform = new FormGroup({
+      nome: new FormControl(null, Validators.required),
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      // possiamo creare anche i nostri validatori
+    })
   }
 
-  onSubmit(form: NgForm) {
-    const email = form.value.email;
-    const password = form.value.password;
+  onSubmit() {
+    // const email = form.value.email;
+    // const password = form.value.password;
     // add authservice
+    console.log(this.homeform);
   }
 }
